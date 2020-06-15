@@ -5,12 +5,62 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="favicon.ico">
-  <title>JavaScript</title>
+  <title>Countries</title>
 </head>
 <body>
 
-  <div id="app" class="container"></div>
+  <div id="app" class="application">
+    <header class="header">
+        <div class="navigation"></div>
+        <div class="logo">
+          Countries test App
+        </div>
+    </header>
+    <section class="">
+    
+      <div class="container">
+        <div class="center">
+          <div id="filter" class="filter">
+            <div class="filter-name"><i class="fa fa-filter"></i></div>
+            <p class="filter-title">Please select region:</p>
+            <div class="filter-item">
+              <input type="radio" id="filter-africa" name="filter" value="africa">
+              <label for="filter-africa">Africa</label>
+            </div>
+            <div class="filter-item">
+              <input type="radio" id="filter-americas" name="filter" value="americas">
+              <label for="filter-americas">Americas</label>
+            </div>
+            <div class="filter-item">
+              <input type="radio" id="filter-asia" name="filter" value="asia">
+              <label for="filter-asia">Asia</label>
+            </div>
+            <div class="filter-item">
+              <input type="radio" id="filter-europe" name="filter" value="europe">
+              <label for="filter-europe">Europe</label>
+            </div>            
+            <div class="filter-item">
+              <input type="radio" id="filter-oceania" name="filter" value="oceania">
+              <label for="filter-oceania">Oceania</label>
+            </div>
+            <div class="filter-btn">
+              <button id="clear-btn" class="filter-clear">Clear Filter</button>
+            </div>
+            <div class="filter-show"><i class="fa fa-caret-right" title="open filter"></i></div>
+          </div>
+          <div class="countries-list">
+          </div>
+        </div>
+      </div>
+    </section>
+      <footer class="footer">
+      <div>Some text about app</div>
+      <div>ilhov.space</div>
+    </footer>
+  </div>
 
 </body>
 </html>
