@@ -1,3 +1,3 @@
 import './scss/index.scss'
+import './js/app'
 
-console.log('Working!')
